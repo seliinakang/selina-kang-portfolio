@@ -28,7 +28,7 @@ nav {
 
 .links {
     color: #352f36;
-    font-size: 1.05vw;
+    font-size: 1.55vw;
     font-weight: 400;
     text-decoration: none; 
     margin-top: 8%;
@@ -383,6 +383,56 @@ footer {
 @media (max-width: 480px) {
 
 .btn {
-    padding: 8px 15px;
+    padding: 6px 10px;
 }
-    }
+
+.nav-links {
+    margin-top: 3%;
+    font-size: 1.55vw;
+}
+
+.logo {
+    margin-top: 5%;
+    font-size: 1.8vw;
+}
+
+footer {
+    background-color: #eeecec;
+    color: #352f36;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+}
+
+.footer-intro {
+    font-size: 2vw;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.footer-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.footer-header {
+    font-size: 1.5vw;
+    color: #a6a6a6;
+    font-weight: 600;
+}
+
+.footer-p {
+    font-size: 1.7vw;
+    font-weight: 400;
+    color: #352f36;
+}
+
+.footer-span {
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+}
