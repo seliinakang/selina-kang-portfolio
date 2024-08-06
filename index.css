@@ -256,8 +256,8 @@ footer {
 .nav-links {
     margin-top: 3%;
     font-size: 1.55vw;
-}
-
+ }
+        
 .logo {
     margin-top: 5%;
     font-size: 1.8vw;
@@ -270,7 +270,7 @@ footer {
 }
   
 .me {
-    width: 60%;
+    width: 50%;
     padding-top: 5%;
     text-align: center;
 }
