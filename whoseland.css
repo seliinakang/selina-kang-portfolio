@@ -1,14 +1,15 @@
 body {
-    font-family: "Epilogue", sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     background-color: #f7f7f7;
+    overflow-x: hidden;
 }
 
 nav {
     background-color: #f7f7f7;
     z-index: 1000;
     width: 100vw;
-    height: 100px;
+    max-height: 100px;
     position: fixed;
     top: 0;
     display: flex;
@@ -18,34 +19,33 @@ nav {
 
 .nav-links {
     color: #352f36;
-    font-family: "Epilogue", sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
     justify-content: right;
-    gap: 70px;
-    padding-right: 120px;
+    gap: 4vw;
+    padding-right: 10vw;
 }
 
 .links {
     color: #352f36;
-    font-size: 16px;
+    font-size: 1.05vw;
     font-weight: 400;
     text-decoration: none; 
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .links:hover {
-    border-bottom: 3.5px solid #FF6F61;
+    border-bottom: 1.5px solid #352f36;
     cursor: pointer;
     margin-bottom: -4px;
 }
 
 .logo {
-    font-family: "Epilogue", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    bottom: 200px;
-    padding-top: 25px;
-    margin-left: 20%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    padding-top: 1%;
+    margin-left: 10%;
     display: flex;
     margin-right: auto;
     margin-top: 1%;
@@ -62,12 +62,12 @@ nav {
     height: auto;
     top: 100%;
     left: 0;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .title {
-    font-family: "Epilogue", sans-serif;
-    font-size: 36px;
+    font-family: "Inter", sans-serif;
+    font-size: 2.8vw;
     font-weight: 600;
     margin-top: 10%;
     margin-left: 20%;
@@ -76,18 +76,25 @@ nav {
     line-height: 1.25;
 }
 
+.pipe {
+    font-weight: 600;
+    color: #352f36;
+    margin-left: 20%;
+    font-size: 1vw;
+}
+
 .background {
-    font-size: 20px;
+    font-size: 1.389vw;
     color: #352f36;
     font-weight: 600;
     margin-left: 20%;
     line-height: 1.7;
-    margin-top: 50px;
+    margin-top: 3%;
     margin-right: 20%;
 }
 
 .background-info {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%;
@@ -98,38 +105,39 @@ nav {
 }
 
 .btn {
-    background-color: #FF6F61;
-    color: #352f36;
+    background-color: #D25335;
+    color: #f7f7f7;
     border-radius: 5px;
-    border: 1px solid #FF6F61;
+    border: 1px solid #D25335;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 15px 25px;
-    font-size: 15px;
+    font-size: 1.15vw;
     cursor: pointer;
     margin-left: 20%;
-    font-family: "Epilogue", sans-serif;
+    font-family: "Inter", sans-serif;
     text-decoration: none;
 }
   
-  .btn:hover {
+.btn:hover {
     background-color: #f7f7f7;
+    color: #352f36;
 }
   
-  .btn:active {
+.btn:active {
     background-color: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .headers {
-    font-size: 14px;
-    color: #DD5C3D;
+    font-size: 0.9vw;
+    color: #a6a6a6;
     font-weight: 600;
     margin-left: 20%;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 .problems-des {
-    font-size: 20px;
+    font-size: 1.389vw;
     color: #352f36;
     font-weight: 600;
     margin-left: 20%;
@@ -139,7 +147,7 @@ nav {
 }
 
 .problems-des-2 {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -149,7 +157,7 @@ nav {
 }
 
 .goals-des {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -159,14 +167,14 @@ nav {
 }
 
 .observations-img {
-    width: 70%;
+    width: 62%;
     height: auto;
-    margin-left: 18%;
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .usability-testing-des {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -175,22 +183,69 @@ nav {
     margin-top: 2%;
 }
 
-.usability-testing-img {
-    width: 30%;
-    height: auto;
-    margin-left: 20%; 
+.usability-box-1 {
+    background-color: #f0f0f0;
+    padding: 0.4vh;
+    margin-left: 20%;
+    display: block;
+    width: fit-content;
     margin-top: 2%;
+    padding-right: 0.9vw;
+    text-indent: 0.8vw;
+}
+  
+.usability-box-1 p {
+    color: #352f36;
+    font-size: 1.05vw;
+    text-align: left;
+    font-weight: 400;
+}
+
+.usability-box-2 {
+    background-color: #f0f0f0;
+    padding: 0.4vh;
+    margin-left: 20%;
+    display: block;
+    width: fit-content;
+    margin-top: 2%;
+    padding-right: 0.9vw;
+    text-indent: 0.8vw;
+}
+  
+.usability-box-2 p {
+    color: #352f36;
+    font-size: 1.05vw;
+    text-align: left;
+    font-weight: 400;
+}
+
+.usability-box-3 {
+    background-color: #f0f0f0;
+    padding: 0.4vh;
+    margin-left: 20%;
+    display: block;
+    width: fit-content;
+    margin-top: 2%;
+    padding-right: 0.9vw;
+    text-indent: 0.8vw;
+}
+  
+.usability-box-3 p {
+    color: #352f36;
+    font-size: 1.05vw;
+    text-align: left;
+    font-weight: 400;
 }
 
 .usability-testing-results-img {
     width: 60%;
     height: auto;
-    margin-left: 20%; 
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .testing-results {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -208,9 +263,9 @@ nav {
 }
 
 .persona-stat span {
-    margin-right: 40px;
+    margin-right: 5%;
     color: #352f36;
-    font-size: 16px;
+    font-size: 1.05vw;
     font-weight: 400;
 }
 
@@ -219,8 +274,12 @@ nav {
     margin-top: 3%;
 }
 
+.persona-stat b {
+    font-weight: 550;
+}
+
 .persona-des {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     line-height: 1.7;
@@ -234,34 +293,38 @@ nav {
     flex-wrap: wrap;
     color: #352f36;
     line-height: 1.7;
-    margin-left: 126px;
     margin-right: 20%;
     margin-left: 20%;
+    margin-top: 3%;
 }
   
 .column-title {
-    font-size: 16px;
+    font-size: 1.05vw;
     font-weight: 500;
+    color: #352f36;
 }
 
 .column {
     flex: 1;
     margin: 25px;
-    font-size: 16px;
+    font-size: 1.05vw;
     margin-left: 35px;
+    color: #352f36;
 }
   
 .column ul {
     padding: 0;
     margin: 0;
+    color: #352f36;
 }
   
 .column li {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    color: #352f36;
 }
 
 .issue-1 {
-    font-size: 20px;
+    font-size: 1.389vw;
     color: #352f36;
     font-weight: 600;
     margin-left: 20%;
@@ -271,7 +334,7 @@ nav {
 }
 
 .issue-1-des {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -281,14 +344,14 @@ nav {
 }
 
 .card-sort {
-    width: 70%;
+    width: 60%;
     height: auto;
-    margin-left: 20%;
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .card-sort-des {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -298,14 +361,14 @@ nav {
 }
 
 .nav-map-img {
-    width: 65%;
+    width: 60%;
     height: auto;
-    margin-left: 20%;
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .issue-2-list {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
     margin-left: 20%; 
@@ -315,27 +378,27 @@ nav {
 }
 
 .lo-fi {
-    font-size: 16px;
+    font-size: 1.05vw;
     color: #352f36;
     font-weight: 400;
-    margin-left: 15%; 
+    margin-left: 20%; 
     line-height: 1.7;
     margin-left: 20%;
     margin-top: 2%;
 }
 
 .lo-fi-img {
-    width: 70%;
+    width: 62%;
     height: auto;
-    margin-left: 240px;
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .design-img {
-    width: 65%;
+    width: 60%;
     height: auto;
-    margin-left: 19%;
-    margin-top: 2%;
+    margin: 2% auto;
+    display: block;
 }
 
 .map {
@@ -349,12 +412,63 @@ nav {
     width: 70%;
     height: auto;
     margin-left: 20%;
-    margin-top: 100px;
+    margin-top: 10%;
 }
 
 .learning {
     width: 57%;
     height: auto;
     margin-left: 20%;
-    margin-top: 100px;
+    margin-top: 10%;
+}
+
+footer {
+    background-color: #eeecec;
+    color: #352f36;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+}
+
+.footer-intro {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+ .footer-section {
+    flex-basis: 30%;
+}
+
+.footer-header {
+    font-size: 1vw;
+    color: #a6a6a6;
+    font-weight: 600;
+}
+
+.footer-p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #352f36;
+}
+
+.footer-span {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+
+@media (max-width: 480px) {
+
+.btn {
+    padding: 8px 15px;
+}
 }

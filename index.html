@@ -2,42 +2,96 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <nav>
-    <h1 class="logo"><a href="index.html">Selina Kang</a></h1>
+    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
     <div class=nav-links>
-        <a class="links">About Me</a>
-        <a class="links">Projects</a>
+        <a class="links" onclick="scrollToSection()">Work</a>
+        <a class="links" href="about.html">About</a>
     </div>
-    </nav>
+</nav>
+<div class="container">
+  <img class="me" src="public/imgs/Me.png">
+  <div class="intro-text">
+    <p class="intro">UX & UI DESIGNER</p>
+    <h1 class="intro2">Selina Kang</h1>
+    <p class="intro-3">Each of us has a unique story worth sharing. As a UX/UI designer, I transform these narratives into engaging digital experiences, using design to create deeper, more meaningful connections between people and technology.</p>
+  </div>
+</div>
 
-    <h1 class="intro">Hi there,</h1>
-    <h1 class="intro2">I'm Selina.</h1>
-    <p class="intro-des">a passionate Interaction Design student at Emily Carr University of Art + Design. I thrive on blending creativity and user-centricity to craft intuitive digital experiences. With a keen eye for detail and a knack for problem-solving, I'm dedicated to creating interfaces that are both beautiful and functional.</p>
+<h2 id="arrow" onclick="scrollToSection()">&darr;</h2>
 
-    <h1 class="featured">Featured projects</h1>
-    <p class="feature-des">Learn more about my work: review my case studies, check final designs, and test out some of my prototypes.</p>
-
-    <div class="container">     
-        <a href="WhoseLand.html">
-        <div class="rectangle1">
-            <img class="image1" src="WhoseLand.png" >
-            <div class="rectangle1-title">Whose Land</div>
-            <div class="rectangle1-des">Redesigning the Whose Land application: an app educating users on Indigenous territories and treaties.</div>
-        </div>
-        </a>
-    
-        <div class="rectangle2">
-            <img class="image1" src="image.jpg">
-        </div>
+<section id="target-section">
+<div class="more-stuff-grid">
+    <div class="from-left slide-in">
+      <img class="whoseland-img" src="public/imgs/whoseland-index-cover.png">
     </div>
-    
+    <div class="from-right slide-in">
+      <h1>Enhancing Understanding of Indigenous Territories with Whose Land</h1>
+      <p class="des">Empowering users with clear, accessible insights into Indigenous communities, our app fosters deeper connections and respect for Indigenous histories and cultures.</p>
+      <a href="whose-land.html">
+        <p class="button-1">VIEW PROJECT &rarr;</p>
+      </a>
+    </div>
+    <div class="from-left slide-in">
+      <h1>Visualizing Gender Inequality: A Data Story on Korea's Economic Disparities</h1>
+      <p class="des">Showcasing the impact of gender inequality in Korea, presenting a compelling story of economic disparities through clear and engaging visuals.</p>
+      <a href="data-documentation.html">
+        <p class="button-2">VIEW PROJECT &rarr;</p>
+      </a>
+    </div>
+    <div class="from-right slide-in">
+      <img class="datadoc-img" src="public/imgs/DataDocMockup.png">
+    </div>
+    <div class="from-left slide-in">
+      <img class="web-des-img" src="public/imgs/web-des-index.jpeg">
+    </div>
+    <div class="from-right slide-in">
+      <h1>Showcasing Sou Fujimoto’s Architectural Vision: A Digital Portfolio Experience</h1>
+      <p class="des">Creating a portfolio website that captures a designer's unique sensibilities through detailed research, wireframes, and mood boards, resulting in a compelling and functional digital experience.</p>
+      <a href="web-design.html">
+        <p class="button-3">VIEW PROJECT &rarr;</p>
+      </a>
+    </div>
+</div>
+</section>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
+
+<footer>
+  <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
+  
+<div class="footer-container">
+  <div class="footer-section">
+    <h1 class="footer-header">CONTACT ME</h1>
+    <p class="footer-p">selinakang1109@gmail.com</p>
+  </div>
+  <div class="footer-section">
+    <h1 class="footer-header">LET'S CONNECT</h1>
+
+    <p class="footer-p">
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">Work</a>
+    </p>
+  </div>
+
+  <div class="footer-section">
+    <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
+    <a href="https://www.example.com" style="text-decoration: none; color: inherit;" class="footer-link">
+      <p class="footer-p">Check out the repo</p>
+    </a>
+  </div>
+</div>
+  
+</footer>
