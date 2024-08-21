@@ -144,12 +144,15 @@ footer {
 
 .nav-links {
     margin-top: 3%;
+}
+    
+.links {
     font-size: 1.55vw;
 }
     
 .logo {
     margin-top: 5%;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 .container {
