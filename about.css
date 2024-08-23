@@ -147,12 +147,12 @@ footer {
 }
     
 .links {
-    font-size: 1.55vw;
+    font-size: 2.05vw;
 }
     
 .logo {
     margin-top: 5%;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .container {
@@ -163,16 +163,18 @@ footer {
     width: 70%;
     height: auto;
     margin-left: 15%;
+    margin-top: 8%;
+    margin-bottom: 5%;
 }
 
 .greetings {
-    font-size: 2.8vw;
-    margin-top: 5%;
+    font-size: 3vw;
+    margin-top: 3%;
 }
 
 .about-me-des {
-    font-size: 1.85vw;
-    margin-top: 2%;
+    font-size: 2vw;
+    margin-top: 5%;
 }
 
 .text-content {
@@ -191,7 +193,7 @@ footer {
     color: #352f36;
     padding-top: 3%;
     padding-bottom: 3%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .footer-intro {

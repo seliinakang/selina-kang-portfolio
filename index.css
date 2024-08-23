@@ -258,12 +258,12 @@ footer {
 }
 
 .links {
-    font-size: 1.55vw;
+    font-size: 2.05vw;
 }
         
 .logo {
     margin-top: 5%;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .container {
@@ -298,7 +298,7 @@ footer {
     align-items: center;
     margin-left: 25%;
     margin-right: 25%;
-    font-size: 1.8vw;
+    font-size: 2vw;
 }
 
 #arrow {
@@ -320,6 +320,26 @@ footer {
     grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(150px, 100px)) minmax(1em,1fr);
     grid-column-gap: 5vw;
     grid-row-gap: 10vw;
+}
+
+.slide-in h1 {
+    font-size: 2.2vw;
+}
+
+.des {
+    font-size: 1.6vw;
+}
+
+.button-1 {
+    font-size: 1.5vw
+}
+
+.button-2 {
+    font-size: 1.5vw
+}
+
+.button-3 {
+    font-size: 1.5vw
 }
 
 footer {
