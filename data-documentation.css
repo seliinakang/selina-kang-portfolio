@@ -194,7 +194,7 @@ nav {
 }
 
 .persona {
-    width: 63%;
+    width: 60%;
     height: auto;
     margin: 2% auto;
     display: block;
@@ -299,10 +299,11 @@ nav {
 }
 
 .user-test-result {
-    width: 60%;
+    width: 50%;
     height: auto;
-    margin: 2% auto;
     display: block;
+    margin-left: 20%;
+    margin-top: 2%;
 }
 
 .final-prototype {
