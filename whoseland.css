@@ -422,6 +422,16 @@ nav {
     margin-top: 10%;
 }
 
+.looking-forward-des {
+    font-size: 1.05vw;
+    color: #352f36;
+    font-weight: 400;
+    margin-left: 20%; 
+    line-height: 1.7;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
 footer {
     background-color: #eeecec;
     color: #352f36;
