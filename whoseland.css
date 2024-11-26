@@ -167,9 +167,10 @@ nav {
 }
 
 .observations-img {
-    width: 62%;
+    width: 65%;
     height: auto;
-    margin: 2% auto;
+    margin-top: 2%;
+    margin-left: 20%;
     display: block;
 }
 
@@ -409,14 +410,14 @@ nav {
 }
 
 .search {
-    width: 70%;
+    width: 65%;
     height: auto;
     margin-left: 20%;
     margin-top: 10%;
 }
 
 .learning {
-    width: 49%;
+    width: 56%;
     height: auto;
     margin-left: 20%;
     margin-top: 10%;
