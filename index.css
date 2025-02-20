@@ -104,7 +104,7 @@ nav {
     color: #a6a6a6;
     font-weight: 300;
     font-size: 3.5vw;
-    padding-top: 7%;  
+    padding-top: 5%;  
     cursor: pointer;  
 }
   
@@ -156,7 +156,7 @@ a {
 }
 
 .button-1:hover {
-    color: #D25335;
+    color: #115475;
     transform: translateX(6px); 
 }
 
@@ -170,7 +170,7 @@ a {
 }
 
 .button-2:hover {
-    color: #506385;
+    color: #D25335;
     transform: translateX(6px);
 }
 
@@ -186,6 +186,10 @@ a {
 .button-3:hover {
     color: #586064;
     transform: translateX(6px);
+}
+
+.myhealth-img {
+    width: 100%;
 }
 
 .whoseland-img {

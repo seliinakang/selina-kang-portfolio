@@ -1,0 +1,276 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #f7f7f7;
+    z-index: 1000;
+    width: 100vw;
+    max-height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    color: #352f36;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: right;
+    gap: 4vw;
+    padding-right: 10vw;
+}
+
+.links {
+    color: #352f36;
+    font-size: 1.05vw;
+    font-weight: 400;
+    text-decoration: none; 
+    margin-top: 8%;
+}
+
+.links:hover {
+    border-bottom: 1.5px solid #352f36;
+    cursor: pointer;
+    margin-bottom: -4px;
+}
+
+.logo {
+    font-family: "Inter", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 400;
+    padding-top: 1%;
+    margin-left: 10%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #352f36;
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    font-size: 2.8vw;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-left: 20%;
+    color: #352f36;
+    width: 60%;
+    line-height: 1.25;
+}
+
+.pipe {
+    font-weight: 600;
+    color: #352f36;
+    margin-left: 20%;
+    font-size: 1vw;
+}
+
+.background {
+    font-size: 1.389vw;
+    color: #352f36;
+    font-weight: 600;
+    margin-left: 20%;
+    line-height: 1.7;
+    margin-top: 3%;
+    margin-right: 20%;
+}
+
+.background-info {
+    font-size: 1.05vw;
+    color: #352f36;
+    font-weight: 400;
+    margin-left: 20%;
+    line-height: 1.75;
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+}
+
+.btn {
+    background-color: #115475;
+    color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #115475;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    font-size: 1.15vw;
+    cursor: pointer;
+    margin-left: 20%;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background-color: #f7f7f7;
+    color: #352f36;
+}
+  
+.btn:active {
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.headers {
+    font-size: 0.9vw;
+    color: #a6a6a6;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.background-des {
+    font-size: 1.05vw;
+    color: #352f36;
+    font-weight: 400;
+    margin-left: 20%; 
+    line-height: 1.7;
+    margin-right: 20%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+
+.des {
+    font-size: 1.05vw;
+    color: #352f36;
+    font-weight: 400;
+    margin-left: 20%; 
+    line-height: 1.7;
+    margin-right: 20%;
+    margin-top: 1.5%;
+}
+
+.observation-img {
+    width: 63%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 20%;
+    display: block;
+}
+
+.persona-img {
+    width: 63%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 20%;
+    display: block;
+    margin-bottom: 1.5%;
+}
+
+.journeymap-img {
+    width: 63%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 20%;
+    display: block;
+}
+
+.touchpoint-img {
+    width: 65%;
+    height: auto;
+    margin-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardsort-img {
+    width: 65%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    margin-left: 20%;
+}
+
+.ia-img {
+    width: 65%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    margin-left: 20%;
+}
+
+.hifi-img {
+    width: 60%;
+    height: auto;
+    margin-top: 4%;
+    display: block;
+    margin-left: 20%;
+}
+
+.medication-touchpoint-img {
+    width: 64%;
+    height: auto;
+    margin-top: 10%;
+    display: block;
+    margin-left: 20%;
+}
+
+.appointment-touchpoint-img {
+    width: 60%;
+    height: auto;
+    margin-top: 10%;
+    display: block;
+    margin-left: 20%;
+}
+
+.records-touchpoint-img {
+    width: 57%;
+    height: auto;
+    margin-top: 10%;
+    display: block;
+    margin-left: 20%;
+}
+
+
+footer {
+    background-color: #eeecec;
+    color: #352f36;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+}
+
+.footer-intro {
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-left: 10%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+ .footer-section {
+    flex-basis: 30%;
+}
+
+.footer-header {
+    font-size: 1vw;
+    color: #a6a6a6;
+    font-weight: 600;
+}
+
+.footer-p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #352f36;
+}
+
+.footer-span {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
