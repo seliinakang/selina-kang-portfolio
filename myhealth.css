@@ -199,6 +199,15 @@ nav {
     margin-left: 20%;
 }
 
+.excludedgroup-img {
+    width: 50%;
+    height: auto;
+    margin-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hifi-img {
     width: 60%;
     height: auto;
