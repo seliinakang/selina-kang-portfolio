@@ -57,6 +57,24 @@ nav {
     color: #352f36;
 }
 
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+.text-content {
+    max-width: 60%;
+    margin-left: 9.5%;
+    margin-top: 4.5%;
+}
+  
+.front-img {
+    max-width: 23%;
+    object-fit: cover; 
+    margin-top: 12%;
+    margin-right: 15%;
+}
+
 .title {
     font-family: "Inter", sans-serif;
     font-size: 2.8vw;
@@ -102,7 +120,7 @@ nav {
     border-radius: 5px;
     border: 1px solid #115475;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 15px 25px;
+    padding: 2.5% 5%;
     font-size: 1.15vw;
     cursor: pointer;
     margin-left: 20%;
