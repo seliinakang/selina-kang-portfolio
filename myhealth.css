@@ -149,6 +149,14 @@ nav {
     margin-top: 1.5%;
 }
 
+.reviews-img {
+    width: 67%;
+    height: auto;
+    margin-left: 18.75%;
+    display: block; 
+    margin-top: 1.5%;
+}
+
 .observation-img {
     width: 63%;
     height: auto;
