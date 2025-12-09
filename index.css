@@ -188,6 +188,20 @@ a {
     transform: translateX(6px);
 }
 
+.button-4 {
+    font-weight: 600;
+    color: #a6a6a6;
+    font-size: 1.1vw;
+    cursor: pointer;
+    margin-top: 5%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-4:hover {
+    color: #1B5A96;
+    transform: translateX(6px);
+}
+
 .myhealth-img {
     width: 100%;
 }
