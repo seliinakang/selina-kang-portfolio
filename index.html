@@ -3,71 +3,78 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 </head>
 
 <body>
-    <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+  <nav>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" onclick="scrollToSection()">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" onclick="scrollToSection()">work</a>
+        <a class="links" href="about.html">about</a>
     </div>
-</nav>
-<div class="container">
-  <img class="me" src="public/imgs/Me.png">
+  </nav>
   <div class="intro-text">
-    <p class="intro">HI MY NAME IS</p>
-    <h1 class="intro2">Selina Kang</h1>
-    <p class="intro-3">I’m a UX/UI designer passionate about creating designs that are easy to use, visually appealing, and sustainable. My work focuses on improving how people interact with digital experiences.</p>
+<p class="intro">
+  hi, i'm selina kang, a ux/ui designer based in 
+  <span class="location" onclick="typeLocation()">
+    edmonton, alberta &#8962;
+    <span class="typed-text" id="typedText"></span>
+  </span>, 
+  who loves creating thoughtful designs that solve real problems and make everyday moments feel a little better.
+</p>
   </div>
-</div>
-
-<h2 id="arrow" onclick="scrollToSection()">&darr;</h2>
 
 <section id="target-section">
-<div class="more-stuff-grid">
-    <div class="from-left slide-in">
-      <img class="myhealth-img" src="public/imgs/MyHealth-Cover.png">
-    </div>
-    <div class="from-right slide-in">
-      <h1>Enhancing User Experience in Digital Health: MyHealth Records Alberta</h1>
-      <p class="des">MyHealth Records Alberta lets residents securely access their health information, including test results, medications, and immunizations, for easier healthcare management.</p>
-      <a href="myhealth.html">
-        <p class="button-1">VIEW PROJECT &rarr;</p>
-      </a>
-    </div>
-    <div class="from-left slide-in">
-      <h1>Enhancing Understanding of Indigenous Territories with Whose Land</h1>
-      <p class="des">Providing users with clear, accessible information into Indigenous communities, this app creates deeper connections and respect for Indigenous histories and cultures.</p>
-      <a href="whose-land.html">
-        <p class="button-2">VIEW PROJECT &rarr;</p>
-      </a>
-    </div>
-    <div class="from-right slide-in">
-      <img class="whoseland-img" src="public/imgs/whoseland-index-cover.png">
-    </div>
-    <div class="from-left slide-in">
-      <img class="web-des-img" src="public/imgs/web-des-index.jpeg">
-    </div>
-    <div class="from-right slide-in">
-      <h1>Showcasing Sou Fujimoto’s Architectural Vision: A Digital Portfolio Experience</h1>
-      <p class="des">Creating a portfolio website that captures a designer's unique style through detailed research and wireframes.</p>
-      <a href="web-design.html">
-        <p class="button-3">VIEW PROJECT &rarr;</p>
-      </a>
-    </div>
-    <div class="from-left slide-in">
-      <h1>Continuity of Care Across Provinces In Canada: A Case Study</h1>
-      <p class="des">A continuing project...</p>
-      <a href="medication-transfer-case-study.html">
-        <p class="button-4">VIEW PROJECT &rarr;</p>
-      </a>
-    </div>
-    <div class="from-right slide-in">
-      <img class="whoseland-img" src="public/imgs/placeholder.jpg">
-    </div>
-</div>
+  <div class="project-grid">
+
+    <a class="project-card" href="myhealth.html">
+      <img src="public/imgs/MyHealth-Cover.png" alt="MyHealth Records Alberta Redesign">
+      <div class="project-overlay">
+        <h3>MyHealth Records Alberta: Redesign</h3>
+        <p>Secure access to health information, including test results, medications, and immunizations, for easier healthcare management.</p>
+      </div>
+    </a>
+
+    <a class="project-card" href="whose-land.html">
+      <img src="public/imgs/whoseland-index-cover.png" alt="Whose Land">
+      <div class="project-overlay">
+        <h3>Whose Land</h3>
+        <p>Clear, accessible info about Indigenous territories to build understanding and respect for Indigenous histories and cultures.</p>
+      </div>
+    </a>
+
+    <a class="project-card" href="web-design.html">
+      <img src="public/imgs/web-des-index.jpeg" alt="Sou Fujimoto Portfolio Website">
+      <div class="project-overlay">
+        <h3>Sou Fujimoto Portfolio Website</h3>
+        <p>A coded portfolio experience shaped by research, wireframes, and a strong visual system.</p>
+      </div>
+    </a>
+
+    <a class="project-card" href="medication-transfer-case-study.html">
+      <img src="public/imgs/placeholder.jpg" alt="Continuity of Care Across Provinces">
+      <div class="project-overlay">
+        <h3>Continuity of Care Across Provinces in Canada</h3>
+        <p>A continuing case study supporting people moving provinces to transfer prescriptions and navigate care.</p>
+      </div>
+    </a>
+
+  </div>
 </section>
+
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
 
 <script>
     function scrollToSection() {
@@ -76,30 +83,72 @@
     }
 </script>
 
+<script>
+  const textToType = "let's go oilers!";
+  const typingSpeed = 25;     // typing speed (ms)
+  const deletingSpeed = 18;   // backspace speed (ms)
+
+  let isAnimating = false;
+  let isExpanded = false;
+
+  function typeLocation() {
+    const typedText = document.getElementById("typedText");
+    if (isAnimating) return;
+
+    isAnimating = true;
+
+    if (!isExpanded) {
+      // TYPE FORWARD
+      let i = 0;
+      function type() {
+        if (i < textToType.length) {
+          typedText.textContent += textToType.charAt(i);
+          i++;
+          setTimeout(type, typingSpeed);
+        } else {
+          isAnimating = false;
+          isExpanded = true;
+        }
+      }
+      type();
+    } else {
+      // TYPE BACKWARD (DELETE)
+      let i = typedText.textContent.length;
+      function backspace() {
+        if (i > 0) {
+          typedText.textContent = typedText.textContent.slice(0, -1);
+          i--;
+          setTimeout(backspace, deletingSpeed);
+        } else {
+          isAnimating = false;
+          isExpanded = false;
+        }
+      }
+      backspace();
+    }
+  }
+</script>
+
 </body>
 
 <footer>
-  <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
 <div class="footer-container">
   <div class="footer-section">
-    <h1 class="footer-header">CONTACT ME</h1>
     <p class="footer-p">selinakang1109@gmail.com</p>
   </div>
   <div class="footer-section">
-    <h1 class="footer-header">LET'S CONNECT</h1>
 
     <p class="footer-p">
-      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">Work</a>
-    </p>
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
   </div>
 
   <div class="footer-section">
-    <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
     <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-      <p class="footer-p">Check out the repo</p>
+      <p class="footer-p">coded by me with 🍵</p>
     </a>
   </div>
 </div>

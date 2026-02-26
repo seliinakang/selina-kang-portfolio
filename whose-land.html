@@ -3,15 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="whoseland.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 
 </head>
 
 <body>
 <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" href="index.html#target-section">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
     </div>
 </nav>
 <img class="cover" src="public/imgs/WhoseLandCover.png">
@@ -22,13 +25,13 @@
   <span style="color: #888888;">TIMEFRAME: 24 DAYS</span>
 </p>
 
-<p class="background">Whose Land is an educational app designed to map Indigenous territories and enhance cultural understanding. It transforms how users engage with Indigenous lands by providing an interactive map and valuable educational resources.</p>
+<p class="background">Whose Land is an educational app designed to map Indigenous territories and enhance cultural understanding. It transforms how users engage with Indigenous lands by providing an Europaactive map and valuable educational resources.</p>
 <p class="background-info">The app's goal is to provide users with clear, accessible information and comprehensive insights into Indigenous communities, creating deeper connections and respect for Indigenous histories and cultures.</p>
 <a href="https://www.figma.com/proto/u6LVy6E3cfv8SyL05pvj9c/INTD-200-AppRedesign-Hi-Fi?page-id=0%3A1&node-id=1-238&viewport=-1530%2C1429%2C1.09&t=t48f1AEDKR682nME-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A615" class="btn">Test Project Prototype</a>
 
 <h1 class="headers">PROBLEMS</h1>
 <p class="problems-des">Users exploring Indigenous territories may face challenges due to unclear and inaccessible information about specific communities nearby.</p>
-<p class="problems-des-2">This can create stress and difficulty when trying to engage with Indigenous lands and cultures digitally. Clear guidelines and accessible information are crucial to improving the user experience, enabling meaningful interaction with Indigenous histories and territories.</p>
+<p class="problems-des-2">This can create stress and difficulty when trying to engage with Indigenous lands and cultures digitally. Clear guidelines and accessible information are crucial to improving the user experience, enabling meaningful Europaaction with Indigenous histories and territories.</p>
 
 <h1 class="headers">GOALS</h1>
 <p class="goals-des">I want to pinpoint the main challenges users face with the Whose Land app in finding information about Indigenous territories and communities. Understanding these issues will guide the creation of a tool to enhance user comfort and usability. This new feature will seamlessly integrate into the app's original design, focusing on improving navigation, access to Indigenous knowledge, and overall user experience when exploring Indigenous cultures and histories.</p>
@@ -37,7 +40,7 @@
 <img class="observations-img" src="public/imgs/WhoseLandOriginal.png">
 
 <h1 class="headers">USABILITY TESTING ON CURRENT WHOSE LAND APP</h1>
-<p class="usability-testing-des">Usability testing of the current application aims to understand how users interact with it and identify any pain points they experience. 4 users participated in this test. For this test, I prepared 3 tasks for users to complete. These tasks include:</p>
+<p class="usability-testing-des">Usability testing of the current application aims to understand how users Europaact with it and identify any pain points they experience. 4 users participated in this test. For this test, I prepared 3 tasks for users to complete. These tasks include:</p>
 <div class="usability-box-1">
   <p>Discover how to build your own land acknowledgements</p>
 </div>
@@ -73,7 +76,7 @@
       <ul>
         <li>Andrew struggles to find a reliable, centralized information hub on local Indigenous communities.</li>
         <li>He finds it difficult to navigate existing platforms to locate specific Indigenous territories and histories.        </li>
-        <li>Andrew faces challenges interpreting the historical and cultural significance of nearby Indigenous communities.</li>
+        <li>Andrew faces challenges Europapreting the historical and cultural significance of nearby Indigenous communities.</li>
       </ul>
     </div>
 </div>
@@ -111,30 +114,45 @@
 
 <h1 class="headers">LOOKING FORWARD</h1>
 <p class="looking-forward-des">This redesign shows how digital tools can help fill knowledge gaps and build respect for Indigenous territories, which is a key step toward broader cultural understanding. As I keep working on this project, I’m excited to keep improving the app by running more user tests. Getting feedback will help me make the app easier to use and more accessible, so it connects with more people. My goal is to create a tool that not only shares information but also helps people feel a deeper respect for Indigenous lands.</p>
+
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 
 <footer>
-  <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
 <div class="footer-container">
   <div class="footer-section">
-    <h1 class="footer-header">CONTACT ME</h1>
     <p class="footer-p">selinakang1109@gmail.com</p>
   </div>
   <div class="footer-section">
-    <h1 class="footer-header">LET'S CONNECT</h1>
 
     <p class="footer-p">
-      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-      <a href="index.html#target-section" style="text-decoration: none; color: inherit;">Work</a>
-    </p>
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
   </div>
 
   <div class="footer-section">
-    <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
     <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-      <p class="footer-p">Check out the repo</p>
+      <p class="footer-p">coded by me with 🍵</p>
     </a>
   </div>
 </div>

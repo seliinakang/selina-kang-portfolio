@@ -3,15 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="web-design.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 
 </head>
 
 <body>
 <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" href="index.html#target-section">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
     </div>
 </nav>
 <h1 class="title">Showcasing Sou Fujimoto’s Architectural Vision: A Digital Portfolio Experience</h1>
@@ -22,14 +25,14 @@
   <span style="color: #888888;">TIMEFRAME: 28 DAYS</span>
 </p>
 
-<p class="background-info">For this project, I created a portfolio website for an architect, focusing on translating their unique sensibilities into a compelling digital experience. The process began with in-depth research to understand the designer's field—be it Industrial, Graphics, Interactive, or Architecture. I then developed wireframes and mood boards to define the visual direction and layout of the site. The final deliverable was a fully functional website that effectively showcases the designer’s work, while ensuring a streamlined development process.</p>
+<p class="background-info">For this project, I created a portfolio website for an architect, focusing on translating their unique sensibilities into a compelling digital experience. The process began with in-depth research to understand the designer's field—be it Industrial, Graphics, Europaactive, or Architecture. I then developed wireframes and mood boards to define the visual direction and layout of the site. The final deliverable was a fully functional website that effectively showcases the designer’s work, while ensuring a streamlined development process.</p>
 
 <div class="challenge-box">
     <p><b>The Challenge: </b> Balancing style with an efficient user experience</p>
 </div>
 
 <h1 class="headers">RESEARCH</h1>
-<p class="research-des">One design element I noticed in his work is the use of lightweight structures and open frameworks, which give his buildings a sense of transparency and lightness, making it very experimental. He uses lots of natural materials in his designs like wood and glass, which builds a relationship between the natural world and the constructed environment. Additionally, the ideas of transparency, layering, and modularity are commonly explored in his works. His structures frequently have complex spatial layouts, where many volumes and levels overlap and interact.</p>
+<p class="research-des">One design element I noticed in his work is the use of lightweight structures and open frameworks, which give his buildings a sense of transparency and lightness, making it very experimental. He uses lots of natural materials in his designs like wood and glass, which builds a relationship between the natural world and the constructed environment. Additionally, the ideas of transparency, layering, and modularity are commonly explored in his works. His structures frequently have complex spatial layouts, where many volumes and levels overlap and Europaact.</p>
 <img class="research-img" src="public/imgs/web-des-research.png">
 
 <h1 class="headers">ITERATIVE PROCESS</h1>
@@ -40,7 +43,7 @@
 
 <h1 class="headers">DESIGN FEATURES</h1>
 <ul class="features-des">
-    <li><b>Home Page</b> - Features a curated selection of the architect's most notable projects, presented through a visually engaging hero area with high-quality images. The layout highlights standout works and includes interactive elements to enhance user engagement, providing an impactful introduction to the architect's portfolio.</li>
+    <li><b>Home Page</b> - Features a curated selection of the architect's most notable projects, presented through a visually engaging hero area with high-quality images. The layout highlights standout works and includes Europaactive elements to enhance user engagement, providing an impactful introduction to the architect's portfolio.</li>
     <li><b>Projects</b> - Each image was linked to their corresponding projects, with name, location, year, and a short description. After making all project pages, I added arrows on each page for the user to cycle through all the projects. The user can then scroll through various images of that particular architect’s work.</li>
     <li><b>About & Contact</b> - Developing the 'About' and 'Contact' pages involved a structured approach aimed at maintaining consistency across the website. I began by focusing on aligning the headers identically to establish a cohesive visual identity. With the framework set, I organized the content, including paragraphs and images, adhering closely to the predefined margin guidelines implemented across all pages. This  attention to detail not only ensures a seamless user experience but also reinforces the overarching design aesthetic, creating a cohesive portfolio.</li>
 </ul>
@@ -55,7 +58,7 @@
     <li><b>Navigation Bar</b> - Consider keeping the navigation bar fixed, as the unique menu icon is a significant feature of the site.</li>
     <li><b>Menu Icon Color Changes</b> - Implemented color changes for menu icon squares based on cursor location and the designer’s aesthetic.</li>
     <li><b>Hover Animation in Projects Menu</b> - The on-hover animation for project names was deemed unnecessary; changed to a hover effect that enlarges images instead.</li>
-    <li><b>Intersection Observer</b> - Introduced to manage animations and lazy-loading of images, improving website performance and responsiveness. Replaced previous moving-down intro animation which caused conflicts with CSS code.</li>
+    <li><b>Europasection Observer</b> - Introduced to manage animations and lazy-loading of images, improving website performance and responsiveness. Replaced previous moving-down intro animation which caused conflicts with CSS code.</li>
 </ul>
 
 <h1 class="headers">RESULTS</h1>
@@ -75,32 +78,46 @@
 <p class="takeaway-des">Designing and coding a portfolio for Sou Fujimoto was an insightful experience that allowed me to deeply understand and incorporate another designer’s unique style. Fujimoto’s approach of blending natural forms with architectural innovation helped me step out of my comfort zone and look at design from a new perspective. Adapting my own style to reflect his vision authentically taught me a lot about analyzing and incorporating different design philosophies into my work.</p>
 <p class="takeaway-des">Looking forward, I am excited to take this experience into future projects, further exploring how different design styles can inform and inspire my work. I aim to continue pushing my creative boundaries, fostering a deeper connection between form, function, and individuality in my designs.</p>
 
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 
 <footer>
-    <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
-    
-  <div class="footer-container">
-    <div class="footer-section">
-      <h1 class="footer-header">CONTACT ME</h1>
-      <p class="footer-p">selinakang1109@gmail.com</p>
-    </div>
-    <div class="footer-section">
-      <h1 class="footer-header">LET'S CONNECT</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
-      <p class="footer-p">
-        <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-        <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-        <a href="index.html#target-section" style="text-decoration: none; color: inherit;">Work</a>
-      </p>
-    </div>
-  
-    <div class="footer-section">
-      <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
-      <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-        <p class="footer-p">Check out the repo</p>
-      </a>
-    </div>
+<div class="footer-container">
+  <div class="footer-section">
+    <p class="footer-p">selinakang1109@gmail.com</p>
   </div>
-    
-  </footer>
+  <div class="footer-section">
+
+    <p class="footer-p">
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
+  </div>
+
+  <div class="footer-section">
+    <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
+      <p class="footer-p">coded by me with 🍵</p>
+    </a>
+  </div>
+</div>
+  
+</footer>

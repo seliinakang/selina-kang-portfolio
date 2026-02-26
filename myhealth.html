@@ -3,15 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="myhealth.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 
 </head>
 
 <body>
 <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" href="index.html#target-section">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
     </div>
 </nav>
 
@@ -70,35 +73,46 @@
 <img class="appointment-touchpoint-img" src="public/imgs/MyHealth-Touchpoint2.png">
 <img class="records-touchpoint-img" src="public/imgs/MyHealth-Touchpoint3.png">
 
+<div class="custom-cursor"></div>
 
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 
 </body>
 
 <footer>
-    <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
-    
-  <div class="footer-container">
-    <div class="footer-section">
-      <h1 class="footer-header">CONTACT ME</h1>
-      <p class="footer-p">selinakang1109@gmail.com</p>
-    </div>
-    <div class="footer-section">
-      <h1 class="footer-header">LET'S CONNECT</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
-      <p class="footer-p">
-        <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-        <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-        <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">Work</a>
-      </p>
-    </div>
-  
-    <div class="footer-section">
-      <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
-      <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-        <p class="footer-p">Check out the repo</p>
-      </a>
-    </div>
+<div class="footer-container">
+  <div class="footer-section">
+    <p class="footer-p">selinakang1109@gmail.com</p>
   </div>
-    
-  </footer>
+  <div class="footer-section">
+
+    <p class="footer-p">
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
+  </div>
+
+  <div class="footer-section">
+    <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
+      <p class="footer-p">coded by me with 🍵</p>
+    </a>
+  </div>
+</div>
   
+</footer>

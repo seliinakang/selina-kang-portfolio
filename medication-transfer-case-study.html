@@ -3,15 +3,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="medication-transfer-case-study.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 
 </head>
 
 <body>
 <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" href="index.html#target-section">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
         
     </div>
 </nav>
@@ -19,7 +22,7 @@
 <h1 class="title">Continuity of Care Across Provinces In Canada: A Case Study</h1>
 <p class="pipe">
   <span style="color: #888888;">CONTINUING UNIVERSITY PROJECT</span> &nbsp; &#124; &nbsp; 
-  <span style="color: #888888">SEPTEMBER 2, 2025 - DECEMBER 8, 2025</span>
+  <span style="color: #888888">SEPTEMBER 2025 - DECEMBER 2025</span>
 </p>
 <p class="background-info">Moving provinces can be an exciting new chapter, but for many people, it also means dealing with (and for some, discovering) messy healthcare rules and bureaucracy. For those on regular medication, transferring prescriptions between provinces can be confusing, stressful, and poorly documented. I chose this project because I saw a real gap: there’s no centralized, trustworthy, easy-to-follow guide for <strong>people moving to British Columbia (BC) from other provinces in Canada</strong>, trying to navigate the steps, pharmacies, and different provincial rules. The goal was simple: <strong>to make that transition easier and more transparent.</strong></p>
 
@@ -36,8 +39,8 @@
 <img class="secondary-research-img" src="public/imgs/secondary-research.png">
 <h1 class="sub-headers">PRIMARY RESEARCH INCLUDED:</h1>
 <ul class="description">
-  <li>Interviewing users who moved to BC from another province and had to transfer medication</li>
-  <li>Interviewing pharmacists and pharmacy assistants, discussing process challenges with pharmacists and pharmacy assistants</li>
+  <li>Europaviewing users who moved to BC from another province and had to transfer medication</li>
+  <li>Europaviewing pharmacists and pharmacy assistants, discussing process challenges with pharmacists and pharmacy assistants</li>
 </ul>
 <p class="description">After gathering all the research, I discovered common pain points. Unclear timelines, inconsistent pharmacy processes, lack of centralized guidance, uncertainty about what documents or steps are required. These all came together to a few recurring themes: <strong>confusion, anxiety, distrust in the different information, and a real need for clarity.</strong>
 These findings directly shaped the design: <strong>this tool wouldn’t try to “do the transfer for them,”</strong> because that’s unrealistic given all the government red tape and varying provincial rules. Instead, it would <strong>guide, support, and clarify.</strong></p>
@@ -77,30 +80,45 @@ These findings directly shaped the design: <strong>this tool wouldn’t try to �
 <h1 class="headers">Next Steps</h1>
 <p class="description">Right now, this project is a strong proof-of-concept. The next phase would be building low to mid-fidelity prototypes and running usability tests with real users to refine the flow. I also plan to work with accessibility guidelines to ensure the tool works for all users.</p>
 <p class="description"><strong>What I learned:</strong> real design isn’t about what you want to build. It’s about what you should build, what fits within systems, meets real human needs, and respects constraints. That pivot, from automation to guidance, is what makes this idea honest, realistic, and truly helpful.</p>
+
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 
 <footer>
-  <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
 <div class="footer-container">
   <div class="footer-section">
-    <h1 class="footer-header">CONTACT ME</h1>
     <p class="footer-p">selinakang1109@gmail.com</p>
   </div>
   <div class="footer-section">
-    <h1 class="footer-header">LET'S CONNECT</h1>
 
     <p class="footer-p">
-      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-      <a href="index.html#target-section" style="text-decoration: none; color: inherit;">Work</a>
-    </p>
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
   </div>
 
   <div class="footer-section">
-    <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
     <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-      <p class="footer-p">Check out the repo</p>
+      <p class="footer-p">coded by me with 🍵</p>
     </a>
   </div>
 </div>

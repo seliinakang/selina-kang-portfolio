@@ -1,8 +1,24 @@
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Europa", sans-serif;
     margin: 0;
     background-color: #f7f7f7;
     overflow-x: hidden;
+}
+
+.custom-cursor {
+  width: 16px;
+  height: 16px;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease;
+  z-index: 9999;
+}
+
+* {
+  cursor: none !important;
 }
 
 nav {
@@ -18,8 +34,8 @@ nav {
 }
 
 .nav-links {
-    color: #352f36;
-    font-family: "Inter", sans-serif;
+    color: #555555;
+    font-family: "Europa", sans-serif;
     display: flex;
     justify-content: right;
     gap: 4vw;
@@ -27,34 +43,33 @@ nav {
 }
 
 .links {
-    color: #352f36;
+    color: #555555;
     font-size: 1.05vw;
-    font-weight: 400;
+    font-weight: 100;
     text-decoration: none; 
     margin-top: 8%;
 }
 
-.links:hover {
-    border-bottom: 1.5px solid #352f36;
-    cursor: pointer;
-    margin-bottom: -4px;
+.logo a:hover {
+    color: #555555;
 }
 
+
 .logo {
-    font-family: "Inter", sans-serif;
+    font-family: "Europa", sans-serif;
     font-size: 1.3vw;
-    font-weight: 400;
+    font-weight: 100;
     padding-top: 1%;
     margin-left: 10%;
     display: flex;
     margin-right: auto;
     margin-top: 1%;
-    cursor: pointer;
+    cursor: poEuropa;
 }
 
 .logo a {
     text-decoration: none;
-    color: #352f36;
+    color: #c3c2c2;
 }
 
 .cover {
@@ -66,26 +81,26 @@ nav {
 }
 
 .title {
-    font-family: "Inter", sans-serif;
+    font-family: "Europa", sans-serif;
     font-size: 2.8vw;
     font-weight: 600;
     margin-top: 10%;
     margin-left: 20%;
-    color: #352f36;
+    color: #555555;
     width: 60%;
     line-height: 1.25;
 }
 
 .pipe {
     font-weight: 600;
-    color: #352f36;
+    color: #555555;
     margin-left: 20%;
     font-size: 1vw;
 }
 
 .background {
     font-size: 1.389vw;
-    color: #352f36;
+    color: #555555;
     font-weight: 600;
     margin-left: 20%;
     line-height: 1.7;
@@ -95,8 +110,8 @@ nav {
 
 .background-info {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%;
     line-height: 1.75;
     margin-top: 2%;
@@ -112,15 +127,15 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 15px 25px;
     font-size: 1.15vw;
-    cursor: pointer;
+    cursor: poEuropa;
     margin-left: 20%;
-    font-family: "Inter", sans-serif;
+    font-family: "Europa", sans-serif;
     text-decoration: none;
 }
   
 .btn:hover {
     background-color: #f7f7f7;
-    color: #352f36;
+    color: #555555;
 }
   
 .btn:active {
@@ -138,7 +153,7 @@ nav {
 
 .problems-des {
     font-size: 1.389vw;
-    color: #352f36;
+    color: #555555;
     font-weight: 600;
     margin-left: 20%;
     line-height: 1.7;
@@ -148,8 +163,8 @@ nav {
 
 .problems-des-2 {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -158,8 +173,8 @@ nav {
 
 .goals-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -176,8 +191,8 @@ nav {
 
 .usability-testing-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 230px;
@@ -196,10 +211,10 @@ nav {
 }
   
 .usability-box-1 p {
-    color: #352f36;
+    color: #555555;
     font-size: 1.05vw;
     text-align: left;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .usability-box-2 {
@@ -214,10 +229,10 @@ nav {
 }
   
 .usability-box-2 p {
-    color: #352f36;
+    color: #555555;
     font-size: 1.05vw;
     text-align: left;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .usability-box-3 {
@@ -232,10 +247,10 @@ nav {
 }
   
 .usability-box-3 p {
-    color: #352f36;
+    color: #555555;
     font-size: 1.05vw;
     text-align: left;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .usability-testing-results-img {
@@ -247,8 +262,8 @@ nav {
 
 .testing-results {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -265,9 +280,9 @@ nav {
 
 .persona-stat span {
     margin-right: 5%;
-    color: #352f36;
+    color: #555555;
     font-size: 1.05vw;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .persona-stat {
@@ -281,8 +296,8 @@ nav {
 
 .persona-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     line-height: 1.7;
     margin-top: 2%;
     margin-right: 20%;
@@ -292,7 +307,7 @@ nav {
 .persona-list {
     display: flex;
     flex-wrap: wrap;
-    color: #352f36;
+    color: #555555;
     line-height: 1.7;
     margin-right: 20%;
     margin-left: 20%;
@@ -302,7 +317,7 @@ nav {
 .column-title {
     font-size: 1.05vw;
     font-weight: 500;
-    color: #352f36;
+    color: #555555;
 }
 
 .column {
@@ -310,23 +325,23 @@ nav {
     margin: 25px;
     font-size: 1.05vw;
     margin-left: 35px;
-    color: #352f36;
+    color: #555555;
 }
   
 .column ul {
     padding: 0;
     margin: 0;
-    color: #352f36;
+    color: #555555;
 }
   
 .column li {
     margin-bottom: 5%;
-    color: #352f36;
+    color: #555555;
 }
 
 .issue-1 {
     font-size: 1.389vw;
-    color: #352f36;
+    color: #555555;
     font-weight: 600;
     margin-left: 20%;
     line-height: 1.7;
@@ -336,8 +351,8 @@ nav {
 
 .issue-1-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -353,8 +368,8 @@ nav {
 
 .card-sort-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -370,8 +385,8 @@ nav {
 
 .issue-2-list {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -380,8 +395,8 @@ nav {
 
 .lo-fi {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-left: 20%;
@@ -425,8 +440,8 @@ nav {
 
 .looking-forward-des {
     font-size: 1.05vw;
-    color: #352f36;
-    font-weight: 400;
+    color: #555555;
+    font-weight: 100;
     margin-left: 20%; 
     line-height: 1.7;
     margin-right: 20%;
@@ -435,7 +450,7 @@ nav {
 
 footer {
     background-color: #eeecec;
-    color: #352f36;
+    color: #555555;
     padding-top: 3%;
     padding-bottom: 3%;
     margin-top: 10%;
@@ -467,13 +482,13 @@ footer {
 
 .footer-p {
     font-size: 1.2vw;
-    font-weight: 400;
-    color: #352f36;
+    font-weight: 100;
+    color: #555555;
 }
 
 .footer-span {
     font-size: 1.2vw;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 
@@ -502,7 +517,7 @@ footer {
 
 footer {
     background-color: #eeecec;
-    color: #352f36;
+    color: #555555;
     padding-top: 3%;
     padding-bottom: 3%;
     margin-top: 10%;
@@ -530,13 +545,13 @@ footer {
 
 .footer-p {
     font-size: 1.7vw;
-    font-weight: 400;
-    color: #352f36;
+    font-weight: 100;
+    color: #555555;
 }
 
 .footer-span {
     font-size: 1.7vw;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 }

@@ -3,53 +3,105 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="about.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
 
 </head>
 
 <body>
 <nav>
-    <h1 class="logo"><a href="index.html">SELINA KANG</a></h1>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
     <div class=nav-links>
-        <a class="links" href="index.html#target-section">Work</a>
-        <a class="links" href="about.html">About</a>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
     </div>
 </nav>
 
 <div class="container">
     <img src="public/imgs/profile-img.jpg" class="profile-img">
     <div class="text-content">
-      <h1 class="headers">A LITTLE BIT ABOUT ME</h1>
-      <h1 class="greetings">Hi, I'm Selina!</h1>
-      <p class="about-me-des">I am a UX and UI designer that is passionate about creating things that are sustainable, aesthetically pleasing, and intuitive. I use design to build stronger, more meaningful relationships between people and technology. I am currently studying at Emily Carr University of Art & Design where I am majoring in interaction design. I'm from Edmonton, Alberta, where my love for creativity first took root. Over the years, my evolving artistic expression has not only shaped my design philosophy but also enriched the way I engage with the world.</p>
-      <p class="about-me-des">When I’m not immersed in design, I love to play video games, paint, capture moments through photography, and enjoy outdoor activities like skiing.</p>
+      <p class="about-me-des">Hi, I'm Selina!</p>
+      <p class="personal-des">UX/UI desinger | Valorant player | Matcha enthusiant | Oilers fan</p>
+      <p class="about-me-des">I’m a UX/UI designer who cares about how things feel to use. I like taking messy, complicated problems and slowly shaping them into something clear and simple. A lot of that comes from my background in art, I’ve always been drawn to details, composition, and the small touches that make something feel intentional. I’m especially interested in work that helps people in real ways, whether that’s navigating healthcare, understanding finances, or just making everyday digital experiences a little less frustrating. For me, good design isn’t just about how it looks, it’s about making things easier and more approachable.</p>
     </div>
 </div>
+
+<section class="experience-section">
+  <p class="experience-label">experience</p>
+
+  <div class="experience-item">
+    <div class="experience-role">
+      User Experience Research Assistant
+    </div>
+    <div class="experience-meta">
+      <span class="company">Alaphia Financial Wellness Co. (Sereniful)</span>
+      <span class="year">October 2025 - May 2026</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-role">
+      Logistics Team Support
+    </div>
+    <div class="experience-meta">
+      <span class="company">FLUI Design Jam</span>
+      <span class="year">September 2025 - February 2026</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="experience-role">
+      User Interface Design Intern
+    </div>
+    <div class="experience-meta">
+      <span class="company">Paperplane Therapeutics</span>
+      <span class="year">January 2025 - April 2025</span>
+    </div>
+  </div>
+
+</section>
+
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
 </body>
 
 <footer>
-    <h1 class="footer-intro">Thanks for stopping by, let's connect!</h1>
-    
-  <div class="footer-container">
-    <div class="footer-section">
-      <h1 class="footer-header">CONTACT ME</h1>
-      <p class="footer-p">selinakang1109@gmail.com</p>
-    </div>
-    <div class="footer-section">
-      <h1 class="footer-header">LET'S CONNECT</h1>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
   
-      <p class="footer-p">
-        <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">Instagram</a> &nbsp; &#124; &nbsp; 
-        <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">Linkedin</a> &nbsp; &#124; &nbsp; 
-        <a href="index.html#target-section" style="text-decoration: none; color: inherit;">Work</a>
-      </p>
-    </div>
+<div class="footer-container">
+  <div class="footer-section">
+    <p class="footer-p">selinakang1109@gmail.com</p>
+  </div>
+  <div class="footer-section">
+
+    <p class="footer-p">
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
+  </div>
+
+  <div class="footer-section">
+    <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
+      <p class="footer-p">coded by me with 🍵</p>
+    </a>
+  </div>
+</div>
   
-    <div class="footer-section">
-        <h1 class="footer-header">CODED BY ME WITH 🍵</h1>
-        <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
-          <p class="footer-p">Check out the repo</p>
-        </a>
-      </div>
-    </div>
-    
-  </footer>
+</footer>
