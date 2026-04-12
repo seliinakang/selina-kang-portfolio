@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bc-health-extension.css">
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="scrollreveal-init.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/mwo2mst.css">
+
+</head>
+
+<body>
+<nav>
+    <h1 class="logo"><a href="index.html">selina kang</a></h1>
+    <div class=nav-links>
+        <a class="links" href="index.html#target-section">work</a>
+        <a class="links" href="about.html">about</a>
+        
+    </div>
+</nav>
+
+<h1 class="title">Continuity of Care Across Provinces: An extension to BC Health</h1>
+<p class="pipe">
+  <span style="color: #888888;">university project</span> &nbsp; &#124; &nbsp; 
+  <span style="color: #888888">Sep 2025 - April 2026</span>
+</p>
+
+<h1 class="sub-headers">overview</h1>
+<p class="description">Moving between provinces is already overwhelming—figuring out healthcare on top of that makes it even harder. This project explores how a guided tool within the BC Health website can help people stay on track with their medications by turning a confusing process into clear, actionable steps.</p>
+
+<h1 class="sub-headers">problem</h1>
+<p class="description">When people move to British Columbia, they’re often left to figure out their healthcare on their own. Information is scattered, steps aren’t clear, and there’s no guidance on what to do first. For people on ongoing medications, this creates real stress, especially when timing matters.</p>
+<p class="description-big">It’s not just a lack of information. It’s a lack of direction.</p>
+
+<h1 class="sub-headers">the current space</h1>
+<p class="description-big">Most existing resources are static, they tell you what exists, but not what to do.</p>
+<img class="secondary-research-img" src="public/imgs/secondary-research.png">
+<p class="description">People currently rely on a mix of different sources to figure out what to do. This usually includes provincial websites like HealthLink BC and PharmaCare, pharmacy chains such as Shoppers Drug Mart, and even forums like Reddit where others share their experiences. While each of these can be helpful, none of them guide users through the process. People are left piecing together information on their own, trying to figure out what applies to them and what to do next.</p>
+
+<h1 class="sub-headers">discovery</h1>
+<p class="description-big">Who better to talk to than people who have gone through the process?</p>
+<img class="discovery-img" src="public/imgs/discovery.png">
+<p class="description">I conducted user interviews with individuals who had recently moved to BC from another province, focusing on how they navigated healthcare and maintained their prescriptions. These conversations, along with secondary research, revealed two key patterns that shaped the direction of the project.</p>
+<ol class="description">
+  <li>Participants described jumping between different sources, trying to piece together what applied to them. Even when they found relevant information, they weren’t confident it was the right next step. The lack of a clear starting point made the entire process feel uncertain from the beginning.</li>
+  <li>While resources were available, they weren’t structured in a way that helped users take action. There was a constant fear of missing something, especially for medications that couldn’t be paused. Users weren’t just looking for information, but for guidance that helped them move forward with confidence.</li>
+</ol>
+
+<h1 class="sub-headers">ideation</h1>
+<p class="description">At first, I explored more automated solutions, something that could handle prescription transfers entirely.</p>
+<p class="description">But that quickly broke down. The system is too complex, and there are too many points that require human verification.</p>
+<p class="description">I also looked into a standalone app, but that raised trust concerns around using a third-party platform for healthcare.</p>
+<img class="ideation-img" src="public/imgs/ideation.png">
+<p class="description">So I shifted my approach. Instead of trying to do everything for the user, I focused on helping them understand what to do next, within a platform they already trust.</p>
+
+<h1 class="sub-headers">testing, testing, testing</h1>
+<p class="description">At this point, I had a structured flow that was meant to guide users through maintaining their healthcare when moving... but questions started to come up. Was the starting point clear? Did the flow actually reduce confusion, or just reorganize it? Were users able to move forward with confidence, or were they still second-guessing their decisions?</p>
+<img class="user-test-img" src="public/imgs/user testing.png">
+<p class="description">To find out, I conducted usability testing with four participants. Participants were asked to go through key tasks such as starting the process, entering their medication, and identifying what steps they would take next based on their situation. I also asked follow-up questions to understand how confident they felt navigating the flow and whether the guidance felt clear and actionable. At this stage, the experience included multiple entry points based on urgency. During testing, I paid close attention to how users approached the starting point. Several participants hesitated before selecting an option, unsure which path applied to them. Others moved forward, but later questioned whether they had made the right choice.</p>
+
+<h1 class="sub-headers">insights</h1>
+<p class="description-big">A new approach centred around three major insights.</p>
+<img class="insights-img" src="public/imgs/insights.png">>
+<p class="description">Participants shared three pivotal insights that dictated the direction of the next iteration.</p>
+<ol class="description">
+  <li>Multiple entry points made it unclear where to begin, causing hesitation before users even started the process</li>
+  <li>Users struggled to identify their own urgency, making it difficult to choose the “right” path</li>
+  <li>Early decisions added unnecessary friction, slowing users down and increasing second-guessing</li>
+</ol>
+
+<h1 class="sub-headers">design decisions</h1>
+<p class="description-big">Removed multiple entry points</p>
+<p class="description">The original design introduced different starting paths, but testing showed this caused hesitation and confusion. Removing this allowed users to begin immediately without needing to decide how to start.</p>
+<img class="design-decision-1-img" src="public/imgs/design-decision-1.png">
+
+<p class="description-big">Handled urgency within the flow</p>
+<p class="description">Instead of separating users based on urgency, the experience now detects urgency through how users respomd and prioritizes steps. This keeps the flow responsive without requiring users to self-identify.</p>
+<video autoplay loop muted playsinline>
+  <source src="public/imgs/design-decision-2.mov" type="video/mp4">
+</video>
+
+<p class="description-big">Structured the experience as a clear progression</p>
+<p class="description">Each step builds on the previous one, leading toward a personalized checklist. This helps reduce confusion and keeps users focused on what to do next.</p>
+<video autoplay loop muted playsinline>
+  <source src="public/imgs/design-decision-3.mov" type="video/mp4">
+</video>
+
+<h1 class="sub-headers">reflection</h1>
+<p class="description-big">Clarity over automation</p>
+<p class="description">I initially focused on creating a more automated solution, but quickly realized that the system and red tape was too complex for that to be realistic. What mattered more was helping users understand what to do. This shift helped me prioritize clear guidance over trying to do everything for the user.</p>
+
+<p class="description-big">Small decisions have big impact</p>
+<p class="description">One of the biggest learnings came from the starting point of the experience. Having multiple entry options seemed helpful at first, but it created hesitation. Removing that single decision made the entire flow feel easier to follow, showing me how even small design choices can shape user confidence.</p>
+
+<p class="description-big">Designing for uncertainty</p>
+<p class="description">This project made me more aware of how people behave when they feel unsure. Users weren’t just looking for information, they needed reassurance that they were doing the right thing. This pushed me to design in a way that reduces doubt and helps users move forward with confidence.</p>
+
+<div class="custom-cursor"></div>
+
+<script>
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+  });
+</script>
+
+<script>
+    function scrollToSection() {
+      const targetSection = document.getElementById('target-section');
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+
+<footer>
+  <h1 class="footer-intro">thanks for stopping by, let's connect!</h1>
+  
+<div class="footer-container">
+  <div class="footer-section">
+    <p class="footer-p">selinakang1109@gmail.com</p>
+  </div>
+  <div class="footer-section">
+
+    <p class="footer-p">
+      <a href="https://www.instagram.com/seliinakang/"style="text-decoration: none; color: inherit;">instagram</a> &nbsp; &#124; &nbsp; 
+      <a href="https://www.linkedin.com/in/selina-kang-b934332b3/"style="text-decoration: none; color: inherit;">linkedin</a> &nbsp; &#124; &nbsp; 
+      <a href="#" onclick="scrollToSection()" style="text-decoration: none; color: inherit;">work</a>    </p>
+  </div>
+
+  <div class="footer-section">
+    <a href="https://github.com/seliinakang/selina-kang-portfolio" style="text-decoration: none; color: inherit;" class="footer-link">
+      <p class="footer-p">coded by me with 🍵</p>
+    </a>
+  </div>
+</div>
+  
+</footer>

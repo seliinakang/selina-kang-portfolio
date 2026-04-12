@@ -1,5 +1,5 @@
 body {
-    font-family: "Europa", sans-serif;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     margin: 0;
     background-color: #f7f7f7;
     overflow-x: hidden;
@@ -35,17 +35,17 @@ nav {
 
 .nav-links {
     color: #555555;
-    font-family: "Europa", sans-serif;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     display: flex;
     justify-content: right;
-    gap: 4vw;
+    gap: 3vw;
     padding-right: 10vw;
 }
 
 .links {
     color: #555555;
     font-size: 1.05vw;
-    font-weight: 100;
+    font-weight: 400;
     text-decoration: none; 
     margin-top: 8%;
 }
@@ -55,9 +55,9 @@ nav {
 }
 
 .logo {
-    font-family: "Europa", sans-serif;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     font-size: 1.3vw;
-    font-weight: 100;
+    font-weight: 400;
     padding-top: 1%;
     margin-left: 10%;
     display: flex;
@@ -92,7 +92,7 @@ nav {
 .personal-des {
     font-size: 1.05vw;
     color: #c3c2c2;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 0.5;
     margin-right: 10%;
     margin-bottom: 5%;
@@ -101,7 +101,7 @@ nav {
 .about-me-des {
     font-size: 1.05vw;
     color: #555555;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.7;
     margin-right: 10%;
     margin-top: 2%;
@@ -128,7 +128,7 @@ nav {
 
 .experience-role {
   font-size: 1.05vw;
-  font-weight: 100;
+  font-weight: 400;
   color: #555555;
 }
 
@@ -156,7 +156,7 @@ footer {
 
 .footer-intro {
     font-size: 1.5vw;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 10%;
 }
 
@@ -175,18 +175,18 @@ footer {
 .footer-header {
     font-size: 1vw;
     color: #a6a6a6;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .footer-p {
     font-size: 1.2vw;
-    font-weight: 100;
+    font-weight: 400;
     color: #555555;
 }
 
 .footer-span {
     font-size: 1.2vw;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 @media (max-width: 480px) {
@@ -227,7 +227,7 @@ footer {
 }
 
 .text-content {
-    width: 80%;
+    margin-right: 10%;
     margin-right: 15%;
     margin-left: 15%;
 }
@@ -247,7 +247,7 @@ footer {
 
 .footer-intro {
     font-size: 2vw;
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 10%;
 }
 
@@ -262,18 +262,18 @@ footer {
 .footer-header {
     font-size: 1.5vw;
     color: #a6a6a6;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .footer-p {
     font-size: 1.7vw;
-    font-weight: 100;
+    font-weight: 400;
     color: #555555;
 }
 
 .footer-span {
     font-size: 1.7vw;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 }
