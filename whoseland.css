@@ -105,7 +105,7 @@ nav {
     margin-left: 10%;
     line-height: 1.7;
     margin-top: 3%;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 .background-info {
@@ -115,7 +115,7 @@ nav {
     margin-left: 10%;
     line-height: 1.75;
     margin-top: 2%;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-bottom: 4%;
 }
 
@@ -158,7 +158,7 @@ nav {
     margin-left: 10%;
     line-height: 1.7;
     margin-top: 2%;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 .problems-des-2 {
@@ -167,7 +167,7 @@ nav {
     font-weight: 400;
     margin-left: 10%; 
     line-height: 1.7;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 2%;
 }
 
@@ -177,7 +177,7 @@ nav {
     font-weight: 400;
     margin-left: 10%; 
     line-height: 1.7;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 2%;
 }
 
@@ -187,6 +187,7 @@ nav {
     margin-top: 2%;
     margin-left: 10%;
     display: block;
+    width: 80%;
 }
 
 .usability-testing-des {
@@ -258,6 +259,7 @@ nav {
     height: auto;
     margin: 2% auto;
     display: block;
+    width: 80%;
 }
 
 .testing-results {
@@ -266,7 +268,7 @@ nav {
     font-weight: 400;
     margin-left: 10%; 
     line-height: 1.7;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 40px;
 }
 
@@ -274,8 +276,9 @@ nav {
     width: 15%;
     height: auto;
     float: left;
-    margin-left: 18%;
+    margin-left: 10%;
     margin-top: 2%;
+    width: 20%;
 }
 
 .persona-stat span {
@@ -300,7 +303,7 @@ nav {
     font-weight: 400;
     line-height: 1.7;
     margin-top: 2%;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-left: 35%;
 }
 
@@ -309,7 +312,7 @@ nav {
     flex-wrap: wrap;
     color: #555555;
     line-height: 1.7;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-left: 10%;
     margin-top: 3%;
 }
@@ -364,6 +367,7 @@ nav {
     height: auto;
     margin: 2% auto;
     display: block;
+    width: 80%;
 }
 
 .card-sort-des {
@@ -381,6 +385,7 @@ nav {
     height: auto;
     margin: 2% auto;
     display: block;
+    width: 80%;
 }
 
 .issue-2-list {
@@ -408,6 +413,7 @@ nav {
     height: auto;
     margin: 2% auto;
     display: block;
+    width: 80%;
 }
 
 .design-img {
@@ -415,6 +421,7 @@ nav {
     height: auto;
     margin: 2% auto;
     display: block;
+    width: 80%;
 }
 
 .map {
@@ -444,7 +451,7 @@ nav {
     font-weight: 400;
     margin-left: 10%; 
     line-height: 1.7;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 2%;
 }
 

@@ -150,6 +150,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 2%;
+    width: 80%;
 }
 
 .iterative-process-des {
@@ -167,6 +168,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 2%;
+    width: 80%;
 }
 
 .web-des-midfi-img {
@@ -174,6 +176,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 1%;
+    width: 80%;
 }
 
 .web-des-mobile-img {
@@ -181,6 +184,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 1%;
+    width: 80%;
 }
 
 .features-des {
@@ -257,6 +261,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 2%;
+    width: 80%;
 }
 
 .final-site {
@@ -264,6 +269,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-top: 5%;
+    width: 80%;
 }
 
 footer {
