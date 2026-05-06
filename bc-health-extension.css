@@ -75,11 +75,15 @@ nav {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     font-size: 2.2vw;
     font-weight: 500;
-    margin-top: 10%;
+    margin-top: 0.5%;
     margin-left: 10%;
     color: #555555;
     margin-right: 10%;
     line-height: 1.25;
+}
+
+.intro-media {
+  margin-top: 80px;
 }
 
 .pipe {
