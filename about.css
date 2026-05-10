@@ -1,13 +1,17 @@
+html {
+  font-size: 16px;
+}
+
 body {
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    margin: 0;
-    background-color: #f7f7f7;
-    overflow-x: hidden;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
 }
 
 .custom-cursor {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   background-color: #bdbdbd;
   border-radius: 50%;
   position: fixed;
@@ -21,121 +25,131 @@ body {
   cursor: none !important;
 }
 
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+
+  * {
+    cursor: auto !important;
+  }
+}
+
 nav {
-    background-color: #f7f7f7;
-    z-index: 1000;
-    width: 100vw;
-    max-height: 100px;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #f7f7f7;
+  z-index: 1000;
+  width: 100vw;
+  max-height: 6.25rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
-    color: #555555;
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    display: flex;
-    justify-content: right;
-    gap: 3vw;
-    padding-right: 10vw;
+  color: #555555;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  display: flex;
+  justify-content: right;
+  gap: 3vw;
+  padding-right: 10vw;
 }
 
 .links {
-    color: #555555;
-    font-size: 1.05vw;
-    font-weight: 400;
-    text-decoration: none; 
-    margin-top: 8%;
+  color: #555555;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 8%;
 }
 
 .logo a:hover {
-    color: #555555;
+  color: #555555;
 }
 
 .logo {
-    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-    font-size: 1.3vw;
-    font-weight: 400;
-    padding-top: 1%;
-    margin-left: 10%;
-    display: flex;
-    margin-right: auto;
-    margin-top: 1%;
-    cursor: poEuropa;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 1%;
+  margin-left: 10%;
+  display: flex;
+  margin-right: auto;
+  margin-top: 1%;
+  cursor: pointer;
 }
 
 .logo a {
-    text-decoration: none;
-    color: #c3c2c2;
+  text-decoration: none;
+  color: #c3c2c2;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15%;
 }
-  
+
 .profile-img {
-    width: 30%;
-    margin-left: 10%;
-    height: 20%;
-    margin-right: 4%;
+  width: 30%;
+  margin-left: 10%;
+  height: 20%;
+  margin-right: 4%;
 }
-  
+
 .text-content {
-    width: 46%;
-    margin-right: 10%;
+  width: 46%;
+  margin-right: 10%;
 }
 
 .personal-des {
-    font-size: 1.05vw;
-    color: #c3c2c2;
-    font-weight: 400;
-    line-height: 0.5;
-    margin-right: 10%;
-    margin-bottom: 5%;
+  font-size: 1rem;
+  color: #c3c2c2;
+  font-weight: 400;
+  line-height: 0.5;
+  margin-right: 10%;
+  margin-bottom: 5%;
 }
 
 .about-me-des {
-    font-size: 1.05vw;
-    color: #555555;
-    font-weight: 400;
-    line-height: 1.7;
-    margin-right: 10%;
-    margin-top: 2%;
+  font-size: 1rem;
+  color: #555555;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-right: 10%;
+  margin-top: 2%;
 }
 
 .experience-section {
-  max-width: 1180px;
-  margin: 120px auto 0 auto;
-  padding: 0 40px;
+  max-width: 73.75rem;
+  margin: 7.5rem auto 0 auto;
+  padding: 0 2.5rem;
 }
 
 .experience-label {
   color: #c3c2c2;
-  font-size: 1.05vw;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
 }
 
 .experience-item {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .experience-role {
-  font-size: 1.05vw;
+  font-size: 1rem;
   font-weight: 400;
   color: #555555;
 }
 
 .experience-meta {
   display: flex;
-  gap: 24px;
-  font-size: 1.05vw;
+  gap: 1.5rem;
+  font-size: 1rem;
 }
 
 .company {
@@ -147,133 +161,158 @@ nav {
 }
 
 footer {
-    background-color: #eeecec;
-    color: #555555;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 10%;
+  background-color: #eeecec;
+  color: #555555;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 10%;
 }
 
 .footer-intro {
-    font-size: 1.5vw;
-    font-weight: 400;
-    margin-left: 10%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 10%;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 10%;
-    padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+  padding-top: 2%;
 }
 
 .footer-section {
-    flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 .footer-header {
-    font-size: 1vw;
-    color: #a6a6a6;
-    font-weight: 400;
+  font-size: 0.9rem;
+  color: #a6a6a6;
+  font-weight: 400;
 }
 
-.footer-p {
-    font-size: 1.2vw;
+.footer-p,
+.footer-span {
+    font-size: 1.2rem;
     font-weight: 400;
     color: #555555;
 }
 
-.footer-span {
-    font-size: 1.2vw;
-    font-weight: 400;
-}
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 
-@media (max-width: 480px) {
+  nav {
+    max-height: 4.5rem;
+    padding-top: 1rem;
+  }
 
-.nav-links {
-    margin-top: 3%;
-}
-    
-.links {
-    font-size: 2.05vw;
-}
-    
-.logo {
-    margin-top: 5%;
-    font-size: 2.5vw;
-}
+  .nav-links {
+    margin-top: 0;
+    gap: 1.5rem;
+    padding-right: 10%;
+  }
 
-.container {
+  .links {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .logo {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .container {
     display: block;
-}
+    margin-top: 8rem;
+  }
 
-.profile-img {
-    width: 70%;
+  .profile-img {
+    width: 75%;
     height: auto;
-    margin-left: 15%;
-    margin-top: 8%;
-    margin-bottom: 5%;
-}
+    margin-left: 12%;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
 
-.greetings {
-    font-size: 3vw;
-    margin-top: 3%;
-}
-
-.about-me-des {
-    font-size: 2vw;
-    margin-top: 5%;
-}
-
-.text-content {
+  .text-content {
+    width: auto;
+    margin-left: 10%;
     margin-right: 10%;
-    margin-right: 15%;
-    margin-left: 15%;
-}
+  }
 
-.headers {
-    font-size: 1.7vw;
-    margin-top: 5%;
-}
+  .about-me-des {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-right: 0;
+    margin-top: 1.5rem;
+  }
 
-footer {
-    background-color: #eeecec;
-    color: #555555;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 20%;
-}
+  .personal-des {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 
-.footer-intro {
-    font-size: 2vw;
-    font-weight: 500;
-    margin-left: 10%;
-}
+  .experience-section {
+    margin: 4rem 10% 0 10%;
+    padding: 0;
+  }
 
-.footer-container {
+  .experience-label {
+    font-size: 0.9rem;
+  }
+
+  .experience-item {
     display: block;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .experience-role {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .experience-meta {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+
+  .company,
+  .year {
+    display: block;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+
+  .footer-intro {
+    font-size: 1.2rem;
+    line-height: 1.4;
     margin-left: 10%;
-    padding-top: 2%;
-}
+    margin-right: 10%;
+  }
 
-.footer-header {
-    font-size: 1.5vw;
-    color: #a6a6a6;
-    font-weight: 500;
-}
+  .footer-container {
+    display: block;
+    margin-left: 10%;
+    padding-top: 1rem;
+  }
 
-.footer-p {
-    font-size: 1.7vw;
-    font-weight: 400;
-    color: #555555;
-}
+  .footer-section {
+    margin-bottom: 1rem;
+  }
 
-.footer-span {
-    font-size: 1.7vw;
-    font-weight: 400;
-}
-
+  .footer-p,
+  .footer-span {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }
